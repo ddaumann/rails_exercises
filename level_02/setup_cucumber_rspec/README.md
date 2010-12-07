@@ -16,7 +16,9 @@ Add the following to your Gemfile:
     gem "capybara"
   end
 
-## rake
+## Install RSpec and Cucumber
+
+`bundle install`
 
 __RSpec:__
 
