@@ -22,8 +22,12 @@ Add the following to your Gemfile:
 
 __RSpec:__
 
-`rails generate rspec:install
+`rails generate rspec:install`
 
 __Cucumber:__
 
-`rails generate cucumber:install --rspec --capybara
+`rails generate cucumber:install --rspec --capybara`
+
+## Fix a bug in capybara
+
+features/support/env.rb line:19 -- comment it out
