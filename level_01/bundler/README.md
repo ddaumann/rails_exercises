@@ -21,19 +21,19 @@ in the __Gemfile__ :
 
 For example, you would like to use haml in your app:
 
-`gem "haml". ">=3.0.0"
+`gem "haml". ">=3.0.0"`
 
 Without any version number, bundler will try to install the latest stable version.
 
 ### requiring a library that has a different name than the gem
 
-gem "sqlite-ruby", :require => "sqlite"
+`gem "sqlite-ruby", :require => "sqlite"`
 
 ### Installing gems for specific environments only
 
-group :test do
-  gem "rspec"
-end
+    group :test do
+      gem "rspec"
+    end
 
 ### update gems
 
