@@ -1,0 +1,62 @@
+/* General Styles */
+
+body {
+  font: 14px Arial, Helvetica;
+  color: #666666;
+  background-color: #F5F5F5;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4 {
+  font: italic 16px "Georgia", "Times", serif;
+  color: #222222;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.7em; }
+p {
+  line-height: 1.5em;
+}
+
+em {
+  color: #3592a8;
+  padding: 4px 8px;
+  font-style: italic;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: dotted 1px #009983;
+  padding: 2px 5px;
+  border-bottom: dotted 1px #aaa;
+}
+
+a:hover {
+  border:none;
+  color: #aaa;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#wrapper {
+  width: 1000px;
+  padding-left: 200px;
+  padding-right: 30px;
+}
+
+/* Page Structure */
+
+#header {
+  margin-top: 1.5em;
+}
+
+#footer {
+  margin-top: 50px;
+}
