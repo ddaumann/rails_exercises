@@ -27,4 +27,6 @@ Config for autotest: `config/cucumber.yml`
 
 2. Implement undefined step in `features/step_definitions/blog_steps.rb`
 
+3. Create model Article `rails g model article title:string`
 
+4. migrate database `rake db:migrate; rake db:test:prepare`
