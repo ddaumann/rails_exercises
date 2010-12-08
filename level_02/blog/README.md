@@ -56,4 +56,10 @@ RSpec time!
 
 4. Drive out some more behaviour for the index view: the titles should be links to the articles
 
-5. Drive out show action, create empty view template
+5. Drive out show action with RSpec, create empty view template
+
+6. Drive out view template for show
+
+#### second scenario and the first feature are complete
+
+#### Next: administer articles
