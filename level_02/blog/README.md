@@ -30,3 +30,7 @@ Config for autotest: `config/cucumber.yml`
 3. Create model Article `rails g model article title:string`
 
 4. migrate database `rake db:migrate; rake db:test:prepare`
+
+5. Add articles resource to the routes
+
+6. Add articles controller
