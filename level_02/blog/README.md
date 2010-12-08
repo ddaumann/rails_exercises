@@ -41,3 +41,7 @@ RSpec time!
 * spec index action
 * create index action
 * create empty index view template and empty view test
+
+8. drive out the index view with rspec
+
+#### first scenario is complete, on to the next one
