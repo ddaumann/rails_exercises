@@ -34,3 +34,10 @@ Config for autotest: `config/cucumber.yml`
 5. Add articles resource to the routes
 
 6. Add articles controller
+
+RSpec time!  
+7. First example: articles/index
+
+* spec index action
+* create index action
+* create empty index view template and empty view test
