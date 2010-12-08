@@ -45,3 +45,9 @@ RSpec time!
 8. drive out the index view with rspec
 
 #### first scenario is complete, on to the next one
+
+#### Scenario: Reading an article
+
+1. add scenario to `features/browse_articles.feature`
+
+2. add step definition "Given an article with the title [...] and the content [...]
