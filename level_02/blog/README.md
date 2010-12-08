@@ -53,3 +53,5 @@ RSpec time!
 2. add step definition "Given an article with the title [...] and the content [...]
 
 3. new migration to add content(text) to article. Migrate test and development.
+
+4. Drive out some more behaviour for the index view: the titles should be links to the articles
