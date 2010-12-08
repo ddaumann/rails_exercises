@@ -24,3 +24,7 @@ Config for autotest: `config/cucumber.yml`
 ### Starting the outside-in cycle
 
 1. Create a feature `features/browse_articles.feature`
+
+2. Implement undefined step in `features/step_definitions/blog_steps.rb`
+
+
