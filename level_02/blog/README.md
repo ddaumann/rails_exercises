@@ -55,3 +55,5 @@ RSpec time!
 3. new migration to add content(text) to article. Migrate test and development.
 
 4. Drive out some more behaviour for the index view: the titles should be links to the articles
+
+5. Drive out show action, create empty view template
