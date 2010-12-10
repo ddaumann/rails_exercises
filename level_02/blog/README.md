@@ -91,3 +91,10 @@ __RSpec__
 __Cucumber__
 
 7. Add new path mapping to `features/support/paths.rb`
+
+__Scenario passes__
+
+##### Scenario: Trying to add an article with a duplicate title
+
+1. Write a new scenario: `features/admin_articles.feature`
+
