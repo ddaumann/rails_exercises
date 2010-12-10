@@ -23,6 +23,8 @@ Config for autotest: `config/cucumber.yml`
 
 ### Starting the outside-in cycle
 
+__Cucumber__
+
 1. Create a feature `features/browse_articles.feature`
 
 2. Implement undefined step in `features/step_definitions/blog_steps.rb`
@@ -35,7 +37,7 @@ Config for autotest: `config/cucumber.yml`
 
 6. Add articles controller
 
-RSpec time!  
+__RSpec__ time!  
 7. First example: articles/index
 
 * spec index action
@@ -48,11 +50,15 @@ RSpec time!
 
 #### Scenario: Reading an article
 
+__Cucumber__
+
 1. add scenario to `features/browse_articles.feature`
 
 2. add step definition "Given an article with the title [...] and the content [...]
 
 3. new migration to add content(text) to article. Migrate test and development.
+
+__Rspec__
 
 4. Drive out some more behaviour for the index view: the titles should be links to the articles
 
@@ -64,12 +70,18 @@ RSpec time!
 
 #### Next: administer articles
 
+##### Scenario: Adding articles
+
+__Cucumber__
+
 1. Write feature: `features/admin_articles.feature`
 
 2. Add missing step_definitions and path definitions
 
-RSpec
+__RSpec__
 
 3. Drive out articles/index view: Add articles link
 
 4. Drive out "new" action at the articles controller
+
+5. Drive out form for new template
