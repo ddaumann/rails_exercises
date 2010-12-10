@@ -67,3 +67,7 @@ RSpec time!
 1. Write feature: `features/admin_articles.feature`
 
 2. Add missing step_definitions and path definitions
+
+RSpec
+
+3. Drive out articles/index view: Add articles link

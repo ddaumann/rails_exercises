@@ -20,5 +20,9 @@ describe "articles/index.html.haml" do
     rendered.should have_selector("a", :href => article_path(@articles[1]), :content => "Bar")
   end
   
+  it "renders a link to add articles" do
+    render
+    rendered.should have_selector("a", :href => new_article_path, :content => "Add article")
+  end
   
 end
