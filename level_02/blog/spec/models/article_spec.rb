@@ -9,5 +9,10 @@ describe Article do
     article.title = "No dup"
     article.should be_valid
   end
-  
+
+  it "validates presence of title" do
+    article = Article.new
+    article.should_not be_valid
+    article.should have(1).error_on :title
+  end
 end
