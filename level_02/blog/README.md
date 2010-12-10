@@ -98,3 +98,7 @@ __Scenario passes__
 
 1. Write a new scenario: `features/admin_articles.feature`
 
+__RSpec__
+
+2. Drive out validation (uniqueness of title) in the model
+
