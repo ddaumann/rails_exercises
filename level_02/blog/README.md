@@ -68,9 +68,9 @@ __Rspec__
 
 #### second scenario and the first feature are complete
 
-#### Next: administer articles
+### Next: administer articles
 
-##### Scenario: Adding articles
+#### Scenario: Adding articles
 
 __Cucumber__
 
@@ -111,3 +111,5 @@ __Cucumber__
 __RSpec__
 
 2. Drive out validation (presence_of) for title in the model
+
+__Scenario passes__
