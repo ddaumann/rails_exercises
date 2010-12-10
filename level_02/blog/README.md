@@ -102,3 +102,12 @@ __RSpec__
 
 2. Drive out validation (uniqueness of title) in the model
 
+##### Scenario: Trying to add an article without a title
+
+__Cucumber__
+
+1. Write a new scenario: `features/admin_articles.feature`
+
+__RSpec__
+
+2. Drive out validation (presence_of) for title in the model

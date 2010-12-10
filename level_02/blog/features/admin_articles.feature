@@ -24,3 +24,9 @@ Feature: Administer articles
     And I fill in "Title" with "Hello world!"
     And I press "Submit"
     And I should not see "Article saved successfully!"
+
+  Scenario: Adding an article without a title
+    Given I am on the articles page
+    When I follow "Add article"
+    And I press "Submit"
+    Then I should not see "Article saved successfully!"
