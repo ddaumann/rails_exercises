@@ -71,3 +71,5 @@ RSpec time!
 RSpec
 
 3. Drive out articles/index view: Add articles link
+
+4. Drive out "new" action at the articles controller

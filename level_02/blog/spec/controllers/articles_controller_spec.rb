@@ -22,4 +22,13 @@ describe ArticlesController do
       assigns[:article].should == mock_article
     end
   end
+
+  context "GET new" do
+    it "assigns a new article to @article" do
+      Article.stub(:new) { mock_article }
+      get :new
+      assigns[:article].should == mock_article
+    end
+  end
+
 end
