@@ -6,17 +6,17 @@ The classic Rails app done BDD-style!
 
 ### Setup
 
-We don't want the Test::Unit stuff (-T)  
+* We don't want the Test::Unit stuff (-T)  
 `rails new blog -T`
 
-Add BDD-related gems to Gemfile and `bundle`
+* Add BDD-related gems to Gemfile and `bundle`
 
     rails generate rspec:install
     rails generate cucumber:install --rspec --capybara
 
-Comment out line 19 in features/support/env.rb to patch the capybara glitch on "follow"
+* Comment out line 19 in features/support/env.rb to patch the capybara glitch on "follow"
 
-Config for autotest: `config/cucumber.yml`
+* Config for autotest: `config/cucumber.yml`
 
     autotest: --format pretty --color
     autotest-all: --format progress --color
@@ -25,26 +25,26 @@ Config for autotest: `config/cucumber.yml`
 
 __Cucumber__
 
-1. Create a feature `features/browse_articles.feature`
+* Create a feature `features/browse_articles.feature`
 
-2. Implement undefined step in `features/step_definitions/blog_steps.rb`
+* Implement undefined step in `features/step_definitions/blog_steps.rb`
 
-3. Create model Article `rails g model article title:string`
+* Create model Article `rails g model article title:string`
 
-4. migrate database `rake db:migrate; rake db:test:prepare`
+* migrate database `rake db:migrate; rake db:test:prepare`
 
-5. Add articles resource to the routes
+* Add articles resource to the routes
 
-6. Add articles controller
+* Add articles controller
 
 __RSpec__ time!  
-7. First example: articles/index
+* First example: articles/index
 
 * spec index action
 * create index action
 * create empty index view template and empty view test
 
-8. drive out the index view with rspec
+* drive out the index view with rspec
 
 #### first scenario is complete, on to the next one
 
@@ -52,64 +52,64 @@ __RSpec__ time!
 
 __Cucumber__
 
-1. add scenario to `features/browse_articles.feature`
+* add scenario to `features/browse_articles.feature`
 
-2. add step definition "Given an article with the title [...] and the content [...]
+* add step definition "Given an article with the title [...] and the content [...]
 
-3. new migration to add content(text) to article. Migrate test and development.
+* new migration to add content(text) to article. Migrate test and development.
 
 __Rspec__
 
-4. Drive out some more behaviour for the index view: the titles should be links to the articles
+* Drive out some more behaviour for the index view: the titles should be links to the articles
 
-5. Drive out show action with RSpec, create empty view template
+* Drive out show action with RSpec, create empty view template
 
-6. Drive out view template for show
+* Drive out view template for show
 
 #### second scenario and the first feature are complete
 
-### Next: administer articles
+### Feature: administer articles
 
 #### Scenario: Adding articles
 
 __Cucumber__
 
-1. Write feature: `features/admin_articles.feature`
+* Write feature: `features/admin_articles.feature`
 
-2. Add missing step_definitions and path definitions
+* Add missing step_definitions and path definitions
 
 __RSpec__
 
-3. Drive out articles/index view: Add articles link
+* Drive out articles/index view: Add articles link
 
-4. Drive out "new" action at the articles controller
+* Drive out "new" action at the articles controller
 
-5. Drive out form for new template
+* Drive out form for new template
 
-6. Drive out create action in articles controller
+* Drive out create action in articles controller
 
 __Cucumber__
 
-7. Add new path mapping to `features/support/paths.rb`
+* Add new path mapping to `features/support/paths.rb`
 
 __Scenario passes__
 
 ##### Scenario: Trying to add an article with a duplicate title
 
-1. Write a new scenario: `features/admin_articles.feature`
+* Write a new scenario: `features/admin_articles.feature`
 
 __RSpec__
 
-2. Drive out validation (uniqueness of title) in the model
+* Drive out validation (uniqueness of title) in the model
 
 ##### Scenario: Trying to add an article without a title
 
 __Cucumber__
 
-1. Write a new scenario: `features/admin_articles.feature`
+* Write a new scenario: `features/admin_articles.feature`
 
 __RSpec__
 
-2. Drive out validation (presence_of) for title in the model
+* Drive out validation (presence_of) for title in the model
 
 __Scenario passes__
