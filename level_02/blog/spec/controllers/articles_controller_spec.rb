@@ -31,4 +31,41 @@ describe ArticlesController do
     end
   end
 
+  context "POST create" do
+    it "assigns the posted article to @article" do
+      Article.stub(:new) { mock_article }
+      post :create
+      assigns[:article].should == mock_article
+    end
+
+    context "with valid attributes" do
+      before { Article.stub(:new) { mock_article(:save => true) } }
+
+      it "saves article" do
+        mock_article.should_receive(:save)
+        post :create
+      end
+      
+      it "redirects to article show page" do
+        post :create
+        response.should redirect_to article_url(mock_article)
+      end
+      
+      it "sets a positive notice" do
+        post :create
+        flash[:notice].should == "Article saved successfully!"
+      end
+      
+    end
+
+    context "with invalid attributes" do
+      before { Article.stub(:new) { mock_article(:save => false) } }
+
+      it "re-renders new template" do
+        post :create
+        response.should render_template "new"
+      end
+    end
+  end
+
 end

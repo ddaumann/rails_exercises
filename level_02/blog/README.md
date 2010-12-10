@@ -85,3 +85,5 @@ __RSpec__
 4. Drive out "new" action at the articles controller
 
 5. Drive out form for new template
+
+6. Drive out create action in articles controller
