@@ -10,7 +10,7 @@ Feature: Administer articles
     And I fill in "Title" with "Hello world!"
     And I fill in "Content" with "spam spam spam"
     And I press "Submit"
-    Then I should be on the show page for "Hello world!"
+    Then I should be on the article show page for "Hello world!"
     And I should see "Hello world!"
     And I should see "spam spam spam"
     And I should see "Back to articles"

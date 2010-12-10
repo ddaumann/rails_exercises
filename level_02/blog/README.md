@@ -87,3 +87,7 @@ __RSpec__
 5. Drive out form for new template
 
 6. Drive out create action in articles controller
+
+__Cucumber__
+
+7. Add new path mapping to `features/support/paths.rb`
