@@ -63,3 +63,7 @@ RSpec time!
 #### second scenario and the first feature are complete
 
 #### Next: administer articles
+
+1. Write feature: `features/admin_articles.feature`
+
+2. Add missing step_definitions and path definitions

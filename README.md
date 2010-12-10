@@ -8,7 +8,7 @@ the essentials easily enough.
 
 ## Documentation... where?
 
-A good place to look for the documentation is generally the README  
+Generally a good place to look for the documentation is the README  
 in the rails projects and the level directories.  
-I am also commiting changes with meaningful messages, so the log wil give you a very good idea of the workflow.
+I am also commiting changes with meaningful messages, so the log will give you a very good idea of the workflow.
 
