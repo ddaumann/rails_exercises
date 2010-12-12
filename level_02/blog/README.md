@@ -2,7 +2,7 @@
 
 The classic Rails app done BDD-style!
 
-## Steps
+## Workflow
 
 ### Setup
 
@@ -38,7 +38,7 @@ __Cucumber__
 * Add articles controller
 
 __RSpec__ time!  
-* First example: articles/index
+First example: articles/index
 
 * spec index action
 * create index action
@@ -102,6 +102,8 @@ __RSpec__
 
 * Drive out validation (uniqueness of title) in the model
 
+__Scenario passes__
+
 ##### Scenario: Trying to add an article without a title
 
 __Cucumber__
@@ -113,3 +115,8 @@ __RSpec__
 * Drive out validation (presence_of) for title in the model
 
 __Scenario passes__
+
+__Cucumber__
+
+* Write a new scenario to delete an article
+

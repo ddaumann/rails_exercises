@@ -30,3 +30,11 @@ Feature: Administer articles
     When I follow "Add article"
     And I press "Submit"
     Then I should not see "Article saved successfully!"
+
+  Scenario: Deleting an article
+    Given an article with the title "Hello world!"
+    And I am on the articles page
+    When I follow "Hello world!"
+    And I follow "Destroy"
+    Then I should be on the articles page
+    And I should not see "Hello world!"
