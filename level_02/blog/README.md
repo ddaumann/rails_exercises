@@ -120,3 +120,7 @@ __Cucumber__
 
 * Write a new scenario to delete an article
 
+__RSpec__
+
+* Drive out destroy link in the show template
+

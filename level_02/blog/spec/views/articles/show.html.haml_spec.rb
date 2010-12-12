@@ -19,5 +19,11 @@ describe "articles/show.html.haml" do
     render
     rendered.should have_selector("a", :href => articles_path, :content => "Back to articles")
   end
+
+  it "renders a destroy link" do
+    render
+    rendered.should have_selector("a", :content => "Destroy")
+  end
+  
   
 end
