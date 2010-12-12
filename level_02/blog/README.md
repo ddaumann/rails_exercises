@@ -124,3 +124,6 @@ __RSpec__
 
 * Drive out destroy link in the show template
 
+* Drive out destroy action in articles controller
+
+__Scenario passes__

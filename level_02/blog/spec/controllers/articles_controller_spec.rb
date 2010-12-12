@@ -68,4 +68,29 @@ describe ArticlesController do
     end
   end
 
+  context "DELETE destroy" do
+    before { Article.stub(:find) { mock_article }}
+
+    it "redirects to articles page" do
+      delete :destroy, :id => 42
+      response.should redirect_to articles_url
+    end
+    
+    it "assigns the requested article as @article" do
+      delete :destroy, :id => 42
+      assigns[:article].should == mock_article
+    end
+    
+    it "destroys the requested article" do
+      mock_article.should_receive :destroy
+      delete :destroy, :id => 42
+    end
+    
+    it "sets the proper notice" do
+      delete :destroy, :id => 42
+      flash[:notice].should == "Article has been successfully destroyed!"
+    end
+    
+  end
+
 end

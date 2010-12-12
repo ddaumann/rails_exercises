@@ -37,4 +37,5 @@ Feature: Administer articles
     When I follow "Hello world!"
     And I follow "Destroy"
     Then I should be on the articles page
+    And I should see "Article has been successfully destroyed!"
     And I should not see "Hello world!"
