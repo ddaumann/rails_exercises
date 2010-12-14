@@ -25,5 +25,9 @@ describe "articles/show.html.haml" do
     rendered.should have_selector("a", :content => "Destroy")
   end
   
+  it "renders an edit link" do
+    render
+    rendered.should have_selector("a", :href => edit_article_path(@article), :content => "Edit")
+  end
   
 end

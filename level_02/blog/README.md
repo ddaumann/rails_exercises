@@ -132,3 +132,8 @@ __Cucumber__
 
 * Write new scenario: Edit an article
 
+* add missing step defintion
+
+__RSpec__
+
+* drive out edit button
