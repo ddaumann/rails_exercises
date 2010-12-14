@@ -15,3 +15,8 @@ Then /^I should see "([^"]*)" on the articles list$/ do |title|
   page.should have_content title
 end
 
+Then /^I should not see "([^"]*)" on the articles list$/ do |title|
+  visit articles_url
+  page.should_not have_content title
+end
+
