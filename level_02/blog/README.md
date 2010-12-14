@@ -127,3 +127,8 @@ __RSpec__
 * Drive out destroy action in articles controller
 
 __Scenario passes__
+
+__Cucumber__
+
+* Write new scenario: Edit an article
+

@@ -39,3 +39,15 @@ Feature: Administer articles
     Then I should be on the articles page
     And I should see "Article has been successfully destroyed!"
     And I should not see "Hello world!"
+
+  Scenario: Editing a feature
+    Given an article with the title "Hello world!"
+    And I am on the articles page
+    When I follow "Hello world!"
+    And I follow "Edit"
+    And I fill in "Title" with "No more hello world!"
+    Then I should be on the article show page for "No more hello world!"
+    And I should see "Successfully updated article!"
+    And I should see "No more hello world!"
+    And I should see "No more hello world!" on the articles list
+    But I should not see "Hello world!" on the articles list
