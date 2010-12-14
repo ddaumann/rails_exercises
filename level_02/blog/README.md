@@ -145,3 +145,9 @@ __RSpec__
 * drive out update action
 
 __Scenario passes__
+
+__Cucmber__
+
+* write scenario: changing the content of an article
+
+__Scenario passes__

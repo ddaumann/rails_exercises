@@ -52,3 +52,14 @@ Feature: Administer articles
     And I should see "No more hello world!"
     And I should see "No more hello world!" on the articles list
     But I should not see "Hello world!" on the articles list
+
+  Scenario: Editing the content of an article
+    Given an article with the title "Hello world!"
+    And I am on the articles page
+    When I follow "Hello world!"
+    And I follow "Edit"
+    And I fill in "Content" with "this is not an original post"
+    And I press "Submit"
+    Then I should be on the article show page for "Hello world!"
+    And I should see "Successfully updated article!"
+    And I should see "this is not an original post"
