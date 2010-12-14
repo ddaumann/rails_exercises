@@ -46,6 +46,7 @@ Feature: Administer articles
     When I follow "Hello world!"
     And I follow "Edit"
     And I fill in "Title" with "No more hello world!"
+    And I press "Submit"
     Then I should be on the article show page for "No more hello world!"
     And I should see "Successfully updated article!"
     And I should see "No more hello world!"

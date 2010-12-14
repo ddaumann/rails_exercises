@@ -101,4 +101,42 @@ describe ArticlesController do
     end
   end
 
+  context "PUT update" do
+
+    it "assigns the requested article as @article" do
+      Article.stub(:find).with(42) { mock_article }
+      put :update, :id => 42
+      assigns[:article].should == mock_article
+    end
+    
+    context "with valid attributes" do
+      before { Article.stub(:find) { mock_article(:update_attributes => true) } }
+
+      it "redirects to article show page" do
+        put :update, :id => 42
+        response.should redirect_to article_url(@article)
+      end
+
+      it "updates @article" do
+        mock_article.should_receive(:update_attributes)
+        put :update, :id => 42
+      end
+      
+      it "sets the proper notice" do
+        put :update, :id => 42
+        flash[:notice].should == "Successfully updated article!"
+      end
+      
+    end
+
+    context "with invalid attributes" do
+      before { Article.stub(:find) { mock_article(:update_attributes => false) } }
+
+      it "re-renders the edit form" do
+        put :update, :id => 42
+        response.should render_template "edit"
+      end
+      
+    end
+  end
 end

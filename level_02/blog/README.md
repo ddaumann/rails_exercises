@@ -141,3 +141,7 @@ __RSpec__
 * drive out edit action
 
 * drive out edit template
+
+* drive out update action
+
+__Scenario passes__

@@ -29,4 +29,13 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find params[:id]
   end
+
+  def update
+    @article = Article.find params[:id]
+    if @article.update_attributes params[:article]
+      redirect_to article_url(@article), :notice => "Successfully updated article!"
+    else
+      render :action => "edit"
+    end
+  end
 end
