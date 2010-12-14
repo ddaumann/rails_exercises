@@ -137,3 +137,7 @@ __Cucumber__
 __RSpec__
 
 * drive out edit button
+
+* drive out edit action
+
+* drive out edit template

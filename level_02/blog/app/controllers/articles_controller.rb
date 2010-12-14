@@ -25,4 +25,8 @@ class ArticlesController < ApplicationController
     @article.destroy
     redirect_to articles_url, :notice => "Article has been successfully destroyed!"
   end
+
+  def edit
+    @article = Article.find params[:id]
+  end
 end

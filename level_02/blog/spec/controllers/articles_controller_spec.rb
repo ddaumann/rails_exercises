@@ -90,7 +90,15 @@ describe ArticlesController do
       delete :destroy, :id => 42
       flash[:notice].should == "Article has been successfully destroyed!"
     end
+  end
+
+  context "GET edit" do
+    before { Article.stub(:find) { mock_article} }
     
+    it "assigns the requested article as @article" do
+      get :edit, :id => 42
+      assigns[:article].should == mock_article
+    end
   end
 
 end
