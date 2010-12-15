@@ -151,3 +151,6 @@ __Cucmber__
 * write scenario: changing the content of an article
 
 __Scenario passes__
+
+### Feature is complete
+
